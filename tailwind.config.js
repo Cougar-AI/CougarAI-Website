@@ -16,8 +16,11 @@ module.exports = {
       colors: {
         'cai-400': '#E45354',
         'cai-500': '#C8494A',
-        'snow': '#FFFAFA'
-      }
+        'snow': '#FFFAFA',
+      },
+      fontSize:{
+        'xxs':'0.55rem',
+      },
     },
   },
   plugins: [],
