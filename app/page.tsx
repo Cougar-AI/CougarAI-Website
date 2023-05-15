@@ -1,14 +1,15 @@
 import Image from 'next/image'
 import localFont from '@next/font/local'
 
+import NavBar from '../components/NavBar'
 import HomepageButton from '@/components/HomepageButton'
 
-const satoshi = localFont({
+export const satoshi = localFont({
   src: '../public/fonts/Satoshi-Regular.otf',
   weight: '200'
 })
 
-const satoshiBold = localFont({
+export const satoshiBold = localFont({
   src: '../public/fonts/Satoshi-Bold.otf',
   weight: '200'
 })
@@ -16,9 +17,12 @@ const satoshiBold = localFont({
 export default function Home() {
   return (
     <main className="bg-cai-400 min-h-screen md:max-2xl:grid md:max-2xl:grid-cols-2">
+      <div className="col-span-2 fixed z-50">
+        <NavBar></NavBar>
+      </div>
       <div className="flex flex-col items-center md:max-2xl:items-start md:max-2xl:pl-32 justify-between">
         <div className={satoshiBold.className}>
-          <div className="gap-y-3 relative z-50 align-bottom"> 
+          <div className="gap-y-3 relative z-40 align-bottom"> 
             {/*.webp file is too fuzzy right now, will change this to a .svg or raise the resolution of the .webp file - Tariq*/}
             <div className="w-36 h-36 md:max-2xl:w-96 md:max-2xl:h-48 select-none">
                 <Image src='/images/CAI.webp' className="object-contain" fill alt=""></Image>
@@ -31,10 +35,10 @@ export default function Home() {
             {/*I'm aware that using that using arbitrary values is bad practice (the square brackets), but this temporary - Tariq*/}
             {/*Add button components below in a flex row.*/}
           </div>
-          <div className="flex flex-row gap-x-8 md:max-2xl:gap-x-12 pt-3 md:max-2xl:pt-1 z-50">
+          <div className="flex flex-row gap-x-8 md:max-2xl:gap-x-9 pt-3 md:max-2xl:pt-1 z-50">
             <HomepageButton text="Join us!" link="/"></HomepageButton>
             <HomepageButton text="Socials" link="/"></HomepageButton>
-            <HomepageButton text="Discord" link="/"></HomepageButton>
+            <HomepageButton text="Discord" link="https://discord.gg/5Jhw67yQDH"></HomepageButton>
           </div>
         </div>
       </div>
