@@ -21,6 +21,9 @@ module.exports = {
       fontSize:{
         'xxs':'0.55rem',
       },
+      borderWidth:{
+        '3':'3px',
+      }
     },
   },
   plugins: [],
