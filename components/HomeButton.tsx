@@ -6,7 +6,7 @@ interface buttonProps {
     link: string,
 }
 
-const HomepageButton = (props: buttonProps) => {
+const HomeButton = (props: buttonProps) => {
     return(
             <button className="bg-white rounded-3xl w-16 h-6 md:max-2xl:w-36 md:max-2xl:h-10 md:max-2xl:py-1.5 py-0.5 text-center">
                 <Link href={props.link} target="_blank">
@@ -16,4 +16,4 @@ const HomepageButton = (props: buttonProps) => {
     )
 }
 
-export default HomepageButton;
+export default HomeButton;
