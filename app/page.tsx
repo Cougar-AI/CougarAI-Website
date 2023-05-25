@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import localFont from '@next/font/local'
+import localFont from 'next/font/local'
 import NavBar from '@/components/NavBar'
 import HomeButton from '@/components/HomeButton'
 
@@ -19,12 +19,12 @@ export default function Home() {
       <div className="col-span-2 fixed z-50">
         <NavBar></NavBar>
       </div>
-      <div className="flex flex-col items-center lg:max-2xl:items-start lg:max-2xl:pl-32 md:mt-24 justify-between">
+      <div className="flex flex-col items-center lg:max-2xl:items-start lg:max-2xl:pl-32 md:max-lg:mt-28 justify-between">
         <div className={satoshiBold.className}>
           <div className="gap-y-3 relative z-40 align-bottom"> 
             {/*.webp file is too fuzzy right now, will change this to a .svg or raise the resolution of the .webp file - Tariq*/}
             <div className="w-36 h-36 md:max-2xl:w-96 md:max-2xl:h-48 select-none">
-                <Image src='/icons/CAI.webp' className="object-contain" fill alt=""></Image>
+                <Image src='/icons/CAI.webp' className="object-contain" fill alt="CAI Logo"></Image>
             </div>
 
             <div className="pt-24 md:max-2xl:pt-60 md:max-2xl:pb-6 align-bottom">
@@ -43,7 +43,7 @@ export default function Home() {
       </div>
 
       <div>
-        <Image src="/icons/binary.svg" width="0" height="0" className="fixed right-0 select-none overflow-hidden object-contain lg:max-2xl:object-fill w-full h-[50%] mt-36 lg:max-2xl:w-1/2 lg:max-2xl:h-[47%] md:h-[70%] lg:max-2xl:pl-72 md:top-0 md:mt-[50rem] lg:max-2xl:mt-[30.5rem]" alt=""></Image>
+        <Image src="/icons/binary.svg" width="0" height="0" className="fixed right-0 select-none overflow-hidden object-contain lg:max-2xl:object-fill w-full h-[50%] mt-36 lg:max-2xl:w-1/2 lg:max-2xl:h-[47%] md:h-[70%] lg:max-2xl:pl-72 md:top-0 md:mt-[50rem] lg:max-2xl:mt-[30.5rem]" alt="Binary pattern"></Image>
       </div>
     </main>
   )
