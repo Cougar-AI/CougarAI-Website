@@ -1,17 +1,7 @@
 import Image from 'next/image'
-import localFont from 'next/font/local'
 import NavBar from '@/components/NavBar'
 import HomeButton from '@/components/HomeButton'
-
-export const satoshi = localFont({
-  src: '../public/fonts/satoshi/Satoshi-Regular.otf',
-  weight: '200'
-})
-
-export const satoshiBold = localFont({
-  src: '../public/fonts/satoshi/Satoshi-Bold.otf',
-  weight: '200'
-})
+import { satoshi, satoshiBold, satoshiMedium } from '@/app/layout';
 
 export default function Home() {
   return (

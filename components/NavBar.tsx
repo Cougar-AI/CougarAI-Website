@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import { satoshi } from '@/app/page';
-import { satoshiBold } from '@/app/page';
+import { satoshi, satoshiBold, satoshiMedium } from '@/app/layout';
 
 const NavBar = () => {
     //later on I will make a map of links to navbar options.
