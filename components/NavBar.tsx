@@ -1,7 +1,5 @@
-import Link from 'next/link'
 import NavLink from '@/components/NavLink'
 import { satoshi, satoshiBold, satoshiMedium } from '@/app/layout';
-
 
 const navOptions: string[][] = [
     ["Home", "/"],
