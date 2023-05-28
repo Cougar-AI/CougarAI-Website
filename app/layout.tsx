@@ -1,22 +1,22 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
-import NavBar from '../components/NavBar'
+import NavBar from '@/components/NavBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const satoshi = localFont({
-  src: '../public/fonts/Satoshi-Regular.otf',
+export const satoshi: unknown = localFont({
+  src: '../public/fonts/satoshi/Satoshi-Regular.otf',
   weight: '200'
 })
 
 export const satoshiBold = localFont({
-  src: '../public/fonts/Satoshi-Bold.otf',
+  src: '../public/fonts/satoshi/Satoshi-Bold.otf',
   weight: '200'
 })
 
 export const satoshiMedium = localFont({
-  src: '../public/fonts/Satoshi-Medium.otf',
+  src: '../public/fonts/satoshi/Satoshi-Medium.otf',
   weight: '200'
 })
 
