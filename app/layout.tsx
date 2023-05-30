@@ -5,7 +5,7 @@ import NavBar from '@/components/NavBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const satoshi: unknown = localFont({
+export const satoshi = localFont({
   src: '../public/fonts/satoshi/Satoshi-Regular.otf',
   weight: '200'
 })
