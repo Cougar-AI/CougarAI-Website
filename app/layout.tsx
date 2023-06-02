@@ -33,10 +33,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* <head><NavBar></NavBar></head> */}
-      <body className={inter.className}>
-        <div className="fixed z-50">
-          <NavBar></NavBar>
-        </div>
+      <body className={satoshiBold.className}>
+          <div className="fixed z-50">
+            <NavBar></NavBar>
+          </div>
         {children}
       </body>
     </html>
