@@ -21,6 +21,7 @@ export default function Home() {
               <h1 className="text-6xl md:max-2xl:text-6xl mt-2">CougarAI</h1>
               <h2 className="text-[1.455rem] md:max-2xl:text-4xl pt-0.5 md:max-2xl:pt-2.5">Your network for AI @ UH</h2>
             </div>
+            
             <HomeButtonTray></HomeButtonTray>
           </div>
         </div>
