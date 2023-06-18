@@ -1,5 +1,5 @@
 import NavLink from '@/components/NavLink'
-import { satoshiBold } from '@/util/fonts';
+import { satoshiBold } from '@/util/localFonts';
 
 const navOptions: string[][] = [
     ["Home", "/"],

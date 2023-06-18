@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import NavBar from '@/components/NavBar'
 import HomeButton from '@/components/HomeButton'
-import { satoshi, satoshiMedium, satoshiBold } from '@/util/fonts';
+import { satoshi, satoshiMedium, satoshiBold } from '@/util/localFonts';
 
 export default function Home() {
   return (
