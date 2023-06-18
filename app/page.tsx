@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import NavBar from '@/components/NavBar'
-import HomeButton from '@/components/HomeButton'
+import HomeButtonTray from '@/components/HomeButtonTray'
 import { satoshi, satoshiMedium, satoshiBold } from '@/util/localFonts';
 
 export default function Home() {
@@ -23,15 +23,10 @@ export default function Home() {
             </div>
             {/*I'm aware that using that using arbitrary values is bad practice (the square brackets), but this temporary - Tariq*/}
             {/*Add button components below in a flex row.*/}
-          </div>
-          <div className="flex flex-row gap-x-8 md:max-2xl:gap-x-9 pt-3 md:max-2xl:pt-1 z-50">
-            <HomeButton text="Join us!" link="/"></HomeButton>
-            <HomeButton text="Socials" link="/"></HomeButton>
-            <HomeButton text="Discord" link="https://discord.gg/5Jhw67yQDH"></HomeButton>
+            <HomeButtonTray></HomeButtonTray>
           </div>
         </div>
       </div>
-
       <div>
         <Image src="/icons/binary.svg" width="0" height="0" className="fixed right-0 select-none overflow-hidden object-contain lg:max-2xl:object-fill w-full h-[50%] mt-36 lg:max-2xl:w-1/2 lg:max-2xl:h-[47%] md:h-[70%] lg:max-2xl:pl-72 md:top-0 md:mt-[50rem] lg:max-2xl:mt-[30.5rem]" alt="Binary pattern"></Image>
       </div>
