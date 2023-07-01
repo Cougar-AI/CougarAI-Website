@@ -11,11 +11,18 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'binary': 'url("/images/binary.svg")',
       },
       colors: {
         'cai-400': '#E45354',
         'cai-500': '#C8494A',
-        'snow': '#FFFAFA'
+        'snow': '#FFFAFA',
+      },
+      fontSize:{
+        'xxs':'0.55rem',
+      },
+      borderWidth:{
+        '3':'3px',
       }
     },
   },
