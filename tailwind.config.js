@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'neural-network': 'url("/images/neuralNetwork.svg")',
+        'neural-network': 'url("/images/neural-network.png")',
         'binary': 'url("/images/binary.svg")',
       },
       colors: {
