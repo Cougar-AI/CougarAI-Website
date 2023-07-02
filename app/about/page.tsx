@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { satoshi, satoshiBold, satoshiMedium } from '@/util/localFonts';
-import HomepageButton from '@/components/HomeButton'
-import OfficerCard from '@/components/OfficerCard'
+import HomepageButton from '@/components/homepage/HomeButton'
+import OfficerCard from '@/components/about/OfficerCard'
 
 export default function About() {
     return (

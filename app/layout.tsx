@@ -1,5 +1,5 @@
 import './globals.css'
-import NavBar from '@/components/NavBar'
+import NavBar from '@/components/navbar/NavBar'
 import { satoshi, satoshiMedium, satoshiBold } from '@/util/localFonts';
 
 export const metadata = {

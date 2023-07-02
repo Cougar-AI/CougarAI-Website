@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import NavBar from '@/components/NavBar'
-import HomeButtonTray from '@/components/HomeButtonTray'
+import HomeButtonTray from '@/components/homepage/HomeButtonTray'
 import { satoshi, satoshiMedium, satoshiBold } from '@/util/localFonts';
 
 export default function Home() {
