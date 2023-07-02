@@ -6,9 +6,6 @@ import { satoshi, satoshiMedium, satoshiBold } from '@/util/localFonts';
 export default function Home() {
   return (
     <main className="bg-cai-400 min-h-screen md:max-2xl:grid lg:max-2xl:grid-cols-2">
-      <div className="col-span-2 fixed z-50">
-        <NavBar></NavBar>
-      </div>
       <div className="flex flex-col items-center lg:max-2xl:items-start lg:max-2xl:pl-32 md:max-lg:mt-28 justify-between">
         <div className={satoshiBold.className}>
           <div className="gap-y-3 relative z-40 align-bottom"> 
