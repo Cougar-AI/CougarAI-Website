@@ -8,16 +8,14 @@ interface officerCardProps{
     officerRole: string;
 }
 
-
-
 const OfficerCard = () => {
     return(
-        <div className="flex flex-col relative bg-snow rounded-md h-80 w-[18.5rem] items-center p-8 overflow-hidden">
-            <Image src="/Icons/placeholder_officer_headshot.svg" width={100} height={100} className="rounded-full pb-2 z-50" alt="Officer headshot"></Image>
+        <div className="flex flex-col relative bg-snow rounded-md h-80 w-64 items-center p-8 overflow-hidden">
+            <Image src="/Icons/placeholder.png" width={125} height={125} className="rounded-full z-50 border-misty-rose border-8" alt="Officer headshot"></Image>
             <h1 className="text-cai-500 text-2xl text-center pt-2 z-50">Zeel Engineer</h1>
             <h2 className="text-cai-500 text-xl text-center pb-2 z-50">President</h2>
             <SocialLink platform="LinkedIn" accountLink={'https://www.linkedin.com/'} platformIcon='/Icons/LinkedIn_icon.svg'></SocialLink>
-            <Image src="/Icons/node-network-test.png" width={1000} height={"0"} className="absolute h-[115%] scale-[80%] rounded-tr-3xl top-0 ml-[10rem] mt-4 object-none z-0" alt="Card Pattern"></Image>
+            <Image src="/Icons/node-network-test.png" width={1000} height={"0"} className="absolute h-[115%] scale-[80%] rounded-tr-3xl top-0 ml-40 mt-10 object-none z-0 select-none" alt="Card Pattern"></Image>
         </div>
     )
 }
