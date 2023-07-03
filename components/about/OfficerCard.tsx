@@ -4,17 +4,25 @@ import SocialLink from '@/components/about/SocialLink'
 import { satoshi, satoshiBold, satoshiMedium } from '@/util/localFonts';
 
 interface officerCardProps{
+    key: number;
     name: string;
     officerRole: string;
     officerLinkedIn: string;
 }
 
 const OfficerCard = (props: officerCardProps) => {
+    let officerNameTextSize = "text-2xl";
+
+    if(props.name.length > 20)
+        officerNameTextSize = "text-[1.3rem] leading-none pb-0.5";
+    else if(props.name.length > 14)
+        officerNameTextSize = "text-[1.35rem]";
+
     return(
-        <div className="flex flex-col relative gap-y-0 bg-snow rounded-md h-64 w-52 md:max-2xl:h-[19rem] md:max-2xl:w-60 items-center md:max-2xl:p-8 p-1.5 overflow-hidden">
+        <div className="flex flex-col relative gap-y-0 bg-snow rounded-md h-72 w-52 md:max-2xl:h-[19rem] md:max-2xl:w-60 items-center md:max-2xl:p-8 p-1.5 overflow-hidden">
             <Image src="/Icons/placeholder.png" width={130} height={130} className="rounded-full z-40 border-misty-rose border-8 scale-[80%] md:max-2xl:scale-100 h/2" alt="Officer headshot"></Image>
                 <div className="flex flex-col items-center md:max-2xl:pb-2 z-40 h-1/2">
-                    <h1 className="text-cai-500 text-2xl text-center drop-shadow-sm md:max-2xl:pt-1.5 -pt-1.5">{props.name}</h1>
+                    <h1 className={`text-cai-500 ${officerNameTextSize} text-center drop-shadow-sm md:max-2xl:pt-1.5 -pt-1.5"`}>{props.name}</h1>
                     <h2 className="text-cai-500 text-xl text-center drop-shadow-sm md:max-2xl:pb-2 pb-1.5">{props.officerRole}</h2>
                     <SocialLink platform="LinkedIn" accountLink={props.officerLinkedIn} platformIcon='/Icons/LinkedIn_icon.svg'></SocialLink>
                 </div>
