@@ -14,7 +14,7 @@ module.exports = {
       colors: {
         'cai-400': '#E45354',
         'cai-500': '#C8494A',
-        'misty-rose': '#FCEFEF',
+        'misty-rose': '#FAE7E7',
         'snow': '#FFFAFA',
       },
       fontSize:{

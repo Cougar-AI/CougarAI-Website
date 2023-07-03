@@ -12,7 +12,7 @@ interface socialLinkProps{
 
 const SocialLink = (props: socialLinkProps) => {
     return(
-      <Link href={`${props.accountLink}`} className="pt-1 pb-2 z-50" target="_blank">
+      <Link href={`${props.accountLink}`} className="z-50" target="_blank">
         <Image src={`${props.platformIcon}`} width={40} height={40} className="z-50 hover:scale-105 hover:rotate-2 duration-700" alt={`${props.platform} icon`}></Image>
       </Link>
     );
