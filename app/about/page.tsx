@@ -21,7 +21,7 @@ export default function About() {
               </div>
             ))}
           </div>
-
+          
           <div className= {satoshiBold.className + " flex flex-col text-center md:max-2xl:text-start md:max-2xl:items-start items-center md:max-2xl:pt-36 md:max-2xl:mx-32 mr-64dd md:max-2xl:pb-16 w-screen"}>
               <h1 className="pt-6 pb-2.5 md:max-2xl:py-6 align-bottom md:max-2xl:text-5xl text-3xl">The Officers</h1>
               <OfficerCardTray/>
