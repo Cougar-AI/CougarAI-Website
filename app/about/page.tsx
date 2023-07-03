@@ -6,8 +6,8 @@ import OfficerCard from '@/components/about/OfficerCard'
 export default function About() {
 
     const aboutUsInformation: string[][] = [
-      ["About Us", "We are a student organization inspired by AI, Machine Learning, and Data Science."],
-      ["What we do.","CougarAI aims to educate members in the latest advances in artificial intelligence, data science, and machine learning. As well as to provide a space for networking among those interested in the field."],
+      ["About Us", "We are a student organization inspired by AI, Machine Learning, and Data Science.", "text-4xl md:max-2xl:text-6xl"],
+      ["What we do.","CougarAI aims to educate members in the latest advances in artificial intelligence, data science, and machine learning. As well as to provide a space for networking among those interested in the field.", "text-3xl md:max-2xl:text-5xl"],
     ];
 
     return (
@@ -15,16 +15,16 @@ export default function About() {
         {/* one column in the grid */}
         <section>
           {/* the padding top (for lg screens and up) here might need a tweak to be consistent with the padding elsewhere on the page */}
-          <div className={satoshiBold.className + " flex flex-col gap-y-24 text-center md:max-2xl:text-start px-5 md:max-2xl:px-0 md:max-2xl:items-start pt-20 md:max-2xl:pt-36 px- md:max-2xl:pl-32"}>
-                {aboutUsInformation.map(([title, description], index) => (
-                    <div key = {index}>
-                      <h1 className="pb-2 md:max-2xl:pb-6 align-bottom text-4xl md:max-2xl:text-6xl">{title}</h1>
-                      <p className={satoshiMedium.className + " pb-2 md:max-2xl:pb-6 align-bottom text-base md:max-2xl:text-3xl leading-normal"}>{description}</p>
-                    </div>
-                ))}
+          <div className={satoshiBold.className + " flex flex-col gap-y-24 text-center md:max-2xl:text-start px-5 md:max-2xl:px-0 md:max-2xl:items-start pt-20 md:max-2xl:pt-36 md:max-2xl:pl-32"}>
+            {aboutUsInformation.map(([title, description, textSize], index) => (
+              <div key = {index}>
+                <h1 className={`pb-2 md:max-2xl:pb-6 align-bottom ${textSize}`}>{title}</h1>
+                <p className={satoshiMedium.className + " pb-2 md:max-2xl:pb-6 align-bottom text-base md:max-2xl:text-3xl leading-normal"}>{description}</p>
+              </div>
+            ))}
           </div>
 
-          <div className= {satoshiBold.className + " flex flex-col text-center md:max-2xl:text-start md:max-2xl:items-start items-center md:max-2xl:pt-36 md:max-2xl:pl-32  md:max-2xl:pb-16"}>
+          <div className= {satoshiBold.className + " flex flex-col text-center md:max-2xl:text-start md:max-2xl:items-start items-center md:max-2xl:pt-36 md:max-2xl:pl-32 md:max-2xl:pb-16"}>
               <h1 className="pt-6 pb-2.5 md:max-2xl:py-6 align-bottom md:max-2xl:text-5xl text-3xl">The Officers</h1>
               <OfficerCard></OfficerCard>
           </div>
