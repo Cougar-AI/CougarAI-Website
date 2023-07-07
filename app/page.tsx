@@ -8,10 +8,10 @@ export default function Home() {
     <main className="bg-cai-400 min-h-screen md:max-2xl:grid lg:max-2xl:grid-cols-2">
       <div className="flex flex-col items-center lg:max-2xl:items-start lg:max-2xl:ml-32 ">
         <Logo/>
-        <div className={satoshiBold.className + " relative z-40 align-bottom bottom-6 md:bottom-4"}>
+        <div className={satoshiBold.className + " flex flex-col relative z-40 align-bottom bottom-3 md:bottom-4 justify-between"}>
           <div className="text-white lg:max-2xl:mt-0 md:max-2xl:pb-6 align-bottom">
             <h1 className="text-[3.76rem] tracking-wider md:max-2xl:text-7xl">CougarAI</h1>
-            <h2 className="text-[1.455rem] md:max-2xl:text-4xl md:max-2xl:pt-2.5">Your network for AI @ UH</h2>
+            <h2 className="text-2xl md:max-2xl:text-4xl md:max-2xl:pt-2.5 max-md:pb-5">Your network for AI @ UH</h2>
           </div>
           
           <HomeButtonTray></HomeButtonTray>
