@@ -24,11 +24,11 @@ export default function About() {
             ))}
           </div>
           
-          <div className="grid md:grid-cols-2 gap-x-5 gap-y-5 items-center md:max-2xl:items-start mx-8">
+          <div className="grid md:grid-cols-2 gap-x-5 gap-y-5 items-center md:max-2xl:items-start mx-8 md:mx-0">
             {aboutUsCardInformation.map((cardTitle, index) => (
-              <div key={index} className="relative flex flex-row gap-x-4 bg-snow rounded-md h-9 md:h-16 items-center overflow-hidden">
+              <div key={index} className="relative flex flex-row gap-x-4 bg-snow rounded-md h-12 md:h-16 items-center overflow-hidden text-center">
                 <Image src="/Icons/chip_placeholder.svg" width={140} height={140} className="absolute mt-6 ml-44" alt="icon"></Image>
-                <h1 className={satoshiBold.className + " text-cai-500 font-bold md:text-2xl text-center px-6 py-4"}>{cardTitle}</h1>
+                <h1 className={satoshiBold.className + " text-cai-500 font-bold md:text-2xl px-6 py-4"}>{cardTitle}</h1>
               </div>
             ))}
           </div>
