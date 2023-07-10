@@ -13,12 +13,12 @@ export default function About() {
 
     return (
       <main className="bg-cai-400 min-h-screen flex flex-col md:max-2xl:grid lg:max-2xl:grid-cols-2">
-        <section className="md:max-2xl:ml-32">
+        <section className="md:max-2xl:ml-32 lg:mt-2">
           {/* the padding top (for lg screens and up) here might need a tweak to be consistent with the padding elsewhere on the page */}
           <div className={satoshiBold.className + " flex flex-col gap-y-10 lg:max-2xl:gap-y-24 text-white text-center md:max-2xl:text-start px-5 md:max-2xl:px-0 md:max-2xl:items-start pt-20 md:pt-72 lg:max-2xl:pt-36 mb-3.5"}>
             {aboutUsInformation.map(([title, description, textSize], index) => (
               <div key = {index}>
-                <h1 className={`pb-2 md:max-2xl:pb-6 align-bottom ${textSize}`}>{title}</h1>
+                <h1 className={`pb-2 md:max-2xl:pb-5 align-bottom ${textSize}`}>{title}</h1>
                 <p className={satoshiMedium.className + " pb-2 md:max-2xl:pb-6 align-bottom text-base md:max-2xl:text-3xl leading-normal"}>{description}</p>
               </div>
             ))}
@@ -27,13 +27,13 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-x-5 gap-y-5 items-center md:max-2xl:items-start mx-8 md:mx-0">
             {aboutUsCardInformation.map((cardTitle, index) => (
               <div key={index} className="relative flex flex-row gap-x-4 bg-snow rounded-md h-12 md:h-16 items-center overflow-hidden text-center">
-                <Image src="/Icons/chip_placeholder.svg" width={140} height={140} className="absolute mt-6 ml-44" alt="icon"></Image>
+                <Image src="/Icons/chip_placeholder.svg" width={140} height={140} className="absolute mt-6 ml-44 select-none" alt="icon"></Image>
                 <h1 className={satoshiBold.className + " text-cai-500 font-bold md:text-2xl px-6 py-4"}>{cardTitle}</h1>
               </div>
             ))}
           </div>
 
-          <div className= {satoshiBold.className + " flex flex-col text-center md:max-2xl:text-start md:max-2xl:items-start items-center my-10 lg:max-2xl:my-24 md:max-2xl:pt-36 mr-64 md:max-2xl:pb-16 w-screen"}>
+          <div className= {satoshiBold.className + " flex flex-col text-center md:max-2xl:text-start md:max-2xl:items-start items-center my-10 lg:max-2xl:mt-28 mb-16 mr-64 md:max-2xl:pb-16 w-screen"}>
               <h1 className="pt-6 pb-2.5 mb-2.5 md:max-2xl:mb-0 md:max-2xl:py-6 align-bottom md:max-2xl:text-5xl text-3xl">The Officers</h1>
               <OfficerCardTray/>
           </div>
