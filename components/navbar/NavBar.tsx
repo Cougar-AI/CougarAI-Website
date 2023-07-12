@@ -10,7 +10,7 @@ const navOptions: string[][] = [
 
 const NavBar = () => {
     return(
-        <div className = {satoshiBold.className + " flex flex-row md:max-lg:flex-col gap-x-4 md:gap-y-1 lg:max-2xl:gap-x-9 bg-cai-400 h-auto text-white md:text-4xl lg:max-2xl:text-2xl align-baseline top-0 w-screen absolute py-4 md:max-2xl:py-5 md:max-2xl:pt-6 items-center justify-center md:max-2xl:justify-normal md:max-2xl:items-start lg:max-2xl:ml-32 md:ml-32"}>
+        <div className = {satoshiBold.className + " flex flex-row md:max-lg:flex-col gap-x-4 md:gap-y-1 lg:gap-x-9 bg-cai-400 h-auto text-white md:text-xl lg:text-2xl align-baseline top-0 w-screen absolute py-4 md:py-5 md:pt-6 items-center justify-center md:justify-normal md:items-start lg:ml-32 md:ml-32"}>
             {navOptions.map(([optionText, optionLink], index) => (
                 <NavLink key = {index} text = {optionText} link = {optionLink}></NavLink>
             ))}
