@@ -12,7 +12,7 @@ export default function About() {
 
     return (
       <main className="bg-cai-400 min-h-screen flex flex-col lg:grid lg:grid-cols-2">
-        <section className="md:ml-32 lg:mt-2 md:max-lg:w-3/5">
+        <section className="md:ml-24 lg:ml-32 lg:mt-2 md:max-lg:w-3/5">
           {/* the padding top (for lg screens and up) here might need a tweak to be consistent with the padding elsewhere on the page */}
           <div className={satoshiBold.className + " flex flex-col gap-y-10 md:gap-y-16 lg:gap-y-24 text-white text-center md:text-start px-5 md:px-0 md:items-start pt-20 md:pt-64 lg:pt-36 mb-3.5"}>
             {aboutUsInformation.map(([title, description, textSize], index) => (
