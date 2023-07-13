@@ -18,12 +18,15 @@ const OfficerCard = (props: officerCardProps) => {
 
     return(
         <div className="flex flex-col relative gap-y-0 bg-snow rounded-md h-[17rem] w-52 md:h-[19rem] md:w-64 items-center md:p-8 p-1.5 overflow-hidden">
+            {/* Will code this for various headshots in the next sprint, when I have headshot photos available */}
             <Image src="/Icons/placeholder.png" width={130} height={130} className="rounded-full z-40 border-misty-rose border-8 scale-[80%] md:scale-100 h/2" alt="Officer headshot"></Image>
+            {/* Officer bio, name, title, and LinkedIn link */}
             <div className="flex flex-col items-center md:pb-2 z-40 h-1/2">
                 <h1 className={`text-cai-500 ${officerNameTextSize} text-center drop-shadow-sm md:pt-1.5 -pt-1.5"`}>{props.name}</h1>
                 <h2 className="text-cai-500 text-xl text-center drop-shadow-sm md:pb-2 pb-1.5">{props.officerRole}</h2>
                 <SocialLink platform="LinkedIn" accountLink={props.officerLinkedIn} platformIcon='/Icons/LinkedIn_icon.svg'></SocialLink>
             </div>
+            {/* Card Pattern */}
             <Image src="/Icons/neural-pattern-mistyrose.png" width={350} height={"0"} className="absolute h-[115%] scale-[160%] md:scale-[195%] rounded-tr-3xl top-0 ml-28 md:mt-20 mt-[4.5rem] object-none z-0 select-none" alt="Card Pattern"></Image>
         </div>
     )

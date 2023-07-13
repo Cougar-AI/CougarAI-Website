@@ -3,6 +3,7 @@ import { satoshi, satoshiBold, satoshiMedium } from '@/util/localFonts';
 
 export default function Membership() {
     return (
+      // Deal with this code on the next sprint, too much to include in this sprint.
       <main className="bg-cai-400 h-screen flex flex-col md:max-2xl:grid lg:max-2xl:grid-cols-2">
             <div className={satoshiBold.className + " flex flex-col gap-y-24 text-center md:max-2xl:text-start px-5 md:max-2xl:px-0 md:max-2xl:items-start pt-20 md:max-2xl:pt-36 md:max-2xl:pl-32"}>
                 <h1 className={`pb-2 md:max-2xl:pb-6 align-bottom text-4xl md:max-2xl:text-6xl`}>Membership</h1>

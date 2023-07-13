@@ -6,7 +6,6 @@ const Logo = () => {
     return (
         <div className={satoshiBold.className + " mt-28 md:mt-56 lg:mt-48 pr-3 z-40"}>
             <Image src='/icons/CAI.webp' width={500} height={500} className="object-contain z-0 align-bottom select-none hidden md:block" alt="CAI Logo for desktop"></Image>
-            {/* <Image src='/icons/CAI.webp' width={390} height={390} className="object-contain z-0 align-bottom select-none hidden md:max-lg:block" alt="CAI Logo for smaller desktops"></Image> */}
             <Image src='/icons/CAI.webp' width={290} height={290} className="object-contain z-0 align-bottom select-none md:hidden block" alt="CAI Logo for mobile"></Image>
         </div>
     )
