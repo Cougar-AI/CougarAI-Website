@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { satoshi, satoshiMedium, satoshiBold } from '@/util/localFonts';
+import { satoshiBold } from '@/util/localFonts';
 
 interface infoCardProps{
     key: number;

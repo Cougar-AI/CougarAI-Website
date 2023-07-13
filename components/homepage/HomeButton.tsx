@@ -1,6 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
-
 interface buttonProps {
     text: string,
     link: string,

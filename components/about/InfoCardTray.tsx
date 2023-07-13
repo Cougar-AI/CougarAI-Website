@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import InfoCard from '@/components/about/InfoCard'
-import { satoshi, satoshiMedium, satoshiBold } from '@/util/localFonts';
 
 const aboutUsCardInformation: string[] = ["Workshops", "Info Sessions", "Social Events"]
 

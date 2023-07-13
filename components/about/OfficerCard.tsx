@@ -1,4 +1,4 @@
-    import Image from 'next/image'
+import Image from 'next/image'
 import SocialLink from '@/components/about/SocialLink'
 
 interface officerCardProps{

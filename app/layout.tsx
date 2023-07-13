@@ -1,6 +1,6 @@
 import './globals.css'
 import NavBar from '@/components/navbar/NavBar'
-import { satoshi, satoshiMedium, satoshiBold } from '@/util/localFonts';
+import { satoshi } from '@/util/localFonts';
 
 export const metadata = {
   title: 'CougarAI',

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import OfficerCardTray from '@/components/about/OfficerCardTray';
 import InfoCardTray from '@/components/about/InfoCardTray';
-import { satoshi, satoshiBold, satoshiMedium } from '@/util/localFonts';
+import { satoshiBold, satoshiMedium } from '@/util/localFonts';
 
 export default function About() {
 

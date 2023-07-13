@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { satoshi, satoshiBold, satoshiMedium } from '@/util/localFonts';
+import { satoshiBold } from '@/util/localFonts';
 
 export default function Membership() {
     return (
