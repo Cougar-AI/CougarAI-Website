@@ -24,7 +24,7 @@ const OfficerCard = (props: officerCardProps) => {
                 <h2 className="text-cai-500 text-xl text-center drop-shadow-sm md:pb-2 pb-1.5">{props.officerRole}</h2>
                 <SocialLink platform="LinkedIn" accountLink={props.officerLinkedIn} platformIcon='/Icons/LinkedIn_icon.svg'></SocialLink>
             </div>
-            <Image src="/Icons/neural-pattern-mistyrose.png" width={350} height={"0"} className="absolute h-[115%] scale-[160%] md:scale-[192%] rounded-tr-3xl top-0 ml-28 md:mt-20 mt-[4.5rem] object-none z-0 select-none" alt="Card Pattern"></Image>
+            <Image src="/Icons/neural-pattern-mistyrose.png" width={350} height={"0"} className="absolute h-[115%] scale-[160%] md:scale-[195%] rounded-tr-3xl top-0 ml-28 md:mt-20 mt-[4.5rem] object-none z-0 select-none" alt="Card Pattern"></Image>
         </div>
     )
 }
