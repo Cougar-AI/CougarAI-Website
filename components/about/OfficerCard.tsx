@@ -13,8 +13,8 @@ const OfficerCard = (props: officerCardProps) => {
 
     if(props.name.length > 20) //The Briana Breakpoint (TM)...
         officerNameTextSize = "text-[1.35rem] leading-none pb-0.5";
-    // else if(props.name.length > 14)
-    //     officerNameTextSize = "text-[1.35rem]";
+    else if(props.name.length > 14)
+        officerNameTextSize += " max-lg:text-[1.35rem]";
 
     return(
         <div className="flex flex-col relative gap-y-0 bg-snow rounded-md h-[17rem] w-52 md:h-[19rem] md:w-64 items-center md:p-8 p-1.5 overflow-hidden">
