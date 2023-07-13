@@ -27,7 +27,7 @@ const OfficerCard = (props: officerCardProps) => {
                 <SocialLink platform="LinkedIn" accountLink={props.officerLinkedIn} platformIcon='/Icons/LinkedIn_icon.svg'></SocialLink>
             </div>
             {/* Card Pattern */}
-            <Image src="/Icons/neural-pattern-mistyrose.png" width={350} height={"0"} className="absolute h-[115%] scale-[160%] md:scale-[195%] rounded-tr-3xl top-0 ml-28 md:mt-20 mt-[4.5rem] object-none z-0 select-none" alt="Card Pattern"></Image>
+            <Image src="/Icons/neural-network-pattern.png" width={350} height={"0"} className="absolute h-[115%] scale-[160%] md:scale-[195%] rounded-tr-3xl top-0 ml-28 md:mt-20 mt-[4.5rem] object-none z-0 select-none" alt="Officer Card Pattern"></Image>
         </div>
     )
 }
