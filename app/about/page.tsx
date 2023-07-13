@@ -6,15 +6,15 @@ import { satoshi, satoshiBold, satoshiMedium } from '@/util/localFonts';
 export default function About() {
 
     const aboutUsInformation: string[][] = [
-      ["About Us", "We are a student organization inspired by AI, Machine Learning, and Data Science.", "text-4xl md:text-6xl"],
+      ["About Us", "We are a student organization inspired by AI, Machine Learning, and Data Science.", "text-4xl md:text-5xl lg:text-6xl"],
       ["What we do.","CougarAI aims to educate members in the latest advances in artificial intelligence, data science, and machine learning. As well as to provide a space for networking among those interested in the field.", "text-3xl md:max-2xl:text-5xl"],
     ];
 
     return (
-      <main className="bg-cai-400 min-h-screen flex flex-col md:grid lg:grid-cols-2">
-        <section className="md:ml-32 lg:mt-2">
+      <main className="bg-cai-400 min-h-screen flex flex-col lg:grid lg:grid-cols-2">
+        <section className="md:ml-32 lg:mt-2 md:max-lg:w-3/5">
           {/* the padding top (for lg screens and up) here might need a tweak to be consistent with the padding elsewhere on the page */}
-          <div className={satoshiBold.className + " flex flex-col gap-y-10 lg:gap-y-24 text-white text-center md:text-start px-5 md:px-0 md:items-start pt-20 md:pt-72 lg:pt-36 mb-3.5"}>
+          <div className={satoshiBold.className + " flex flex-col gap-y-10 md:gap-y-16 lg:gap-y-24 text-white text-center md:text-start px-5 md:px-0 md:items-start pt-20 md:pt-64 lg:pt-36 mb-3.5"}>
             {aboutUsInformation.map(([title, description, textSize], index) => (
               <div key = {index}>
                 <h1 className={`pb-2 md:pb-5 align-bottom ${textSize}`}>{title}</h1>
@@ -23,7 +23,6 @@ export default function About() {
             ))}
           </div>
           
-          {/* this can be made into a component */}
           <InfoCardTray></InfoCardTray>
 
           <div className= {satoshiBold.className + " flex flex-col text-center md:text-start md:items-start items-center my-10 lg:mt-28 mb-16 mr-64 md:pb-16 w-screen"}>
