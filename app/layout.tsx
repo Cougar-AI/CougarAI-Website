@@ -1,10 +1,19 @@
 import './globals.css'
 import NavBar from '@/components/navbar/NavBar'
 import { satoshi } from '@/util/localFonts';
+import { Metadata } from 'next'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'CougarAI',
   description: 'AI & Machine Learning @ UH',
+  openGraph: {
+    title: 'CougarAI',
+    description: 'AI & Machine Learning @ UH',
+    url: 'https://cougarai.org',
+    siteName: 'CougarAI',
+    locale: 'en-US',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({
