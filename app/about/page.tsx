@@ -8,7 +8,7 @@ export default function About() {
     // update this content/information with better branding.
     const aboutUsInformation: string[][] = [
       ["About Us", "We are a student organization inspired by AI, Machine Learning, and Data Science.", "text-4xl md:text-5xl lg:text-6xl"],
-      ["What we do.","CougarAI aims to educate members in the latest advances in artificial intelligence, data science, and machine learning. As well as to provide a space for networking among those interested in the field.", "text-3xl md:max-2xl:text-5xl"],
+      ["What we do.","CougarAI aims to educate members in the latest advances in artificial intelligence, data science, and machine learning. As well as to provide a space for networking among those interested in the field.", "text-3xl md:text-5xl"],
     ];
 
     return (
