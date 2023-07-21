@@ -24,7 +24,7 @@ export default function About() {
             ))}
           </div>
 
-          <InfoCardTray></InfoCardTray>
+          <InfoCardTray cardTitles={["Workshops", "Info Sessions", "Social Events"]}></InfoCardTray>
 
           {/* Officer section of the page */}
           <div className= {satoshiBold.className + " flex flex-col text-center md:text-start md:items-start items-center my-10 lg:mt-28 mb-16 mr-64 md:pb-16 w-screen"}>

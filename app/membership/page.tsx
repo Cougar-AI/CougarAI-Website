@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { satoshiMedium, satoshiBold } from '@/util/localFonts';
+import InfoCardTray from '@/components/about/InfoCardTray';
 
 export default function Membership() {
 
@@ -21,6 +22,7 @@ export default function Membership() {
                 {'Through our membership program, you will have more opportunities to explore AI & Data Science in a hands-on environment.'}
               </p>
             </div>
+            {/* <InfoCardTray cardTitles={['$10 per semester', '$15 per year']}></InfoCardTray> */}
           </div>
         </section>
 
