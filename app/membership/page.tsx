@@ -1,16 +1,10 @@
 import Image from 'next/image'
 import { satoshiMedium, satoshiBold } from '@/util/localFonts';
-import InfoCardTray from '@/components/about/InfoCardTray';
 
 export default function Membership() {
-
-    const membershipInformation: string[][] = [
-      ['Membership', 'Gain access to exclusive member-only AI workshops, research projects, and rewards through our CougarAI membership program.', ""],
-    ]
-
     return (
       // Deal with this code on the next sprint, too much to include in this sprint.
-      <main className="bg-cai-400 min-h-screen flex flex-col lg:grid lg:grid-cols-2">
+      <main className="bg-cai-400 h-screen overflow-hidden flex flex-col lg:grid lg:grid-cols-2">
         <section className="md:ml-24 lg:ml-32 lg:mt-2 md:max-lg:w-3/5">
           <div className={satoshiBold.className + " flex flex-col text-white text-center md:text-start px-5 md:px-0 md:items-start pt-20 md:pt-64 lg:pt-36 mb-3.5"}>
             <div>
@@ -22,7 +16,9 @@ export default function Membership() {
                 {'Our membership opens the door to having more opportunities to explore AI & Data Science in a hands-on environment.'}
               </p>
             </div>
-
+            <p className={satoshiMedium.className + " pb-2 md:pb-6 align-bottom text-base md:text-2xl lg:text-3xl leading-normal"}>
+                {'Sign up today!'}
+            </p>
             <div className="flex flex-col w-full gap-y-4">
               <div className="flex flex-row gap-x-4 h-inherit w-full">
                 <div className="bg-snow rounded-md w-1/2 py-3 pl-6">
@@ -35,9 +31,9 @@ export default function Membership() {
             </div>
           </div>
 
-          <p className={satoshiMedium.className + " pb-2 md:pb-6 align-bottom text-base md:text-2xl lg:text-3xl leading-normal"}>
+          <p className={satoshiMedium.className + " pb-2 md:pb-6 align-bottom text-base md:text-2xl lg:text-3xl leading-normal mt-5 mb-96"}>
               {'Any questions regarding payment can be sent to '} 
-              <a href="mailto:cougaraicontact@gmail.com" className="group duration-700 ease-in-out">cougaraicontact@gmail.com<span className="block max-w-0 group-hover:max-w-max transition-all duration-500 h-0.5 bg-white"/></a>
+              <a href="mailto:cougaraicontact@gmail.com" className="">cougaraicontact@gmail.com</a>
           </p>
         </section>
 
