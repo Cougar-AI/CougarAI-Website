@@ -4,7 +4,7 @@ import { satoshiMedium, satoshiBold } from '@/util/localFonts';
 export default function Membership() {
     return (
       // Deal with this code on the next sprint, too much to include in this sprint.
-      <main className="bg-cai-400 h-screen overflow-hidden flex flex-col lg:grid lg:grid-cols-2">
+      <main className="bg-cai-400 h-screen flex flex-col lg:grid lg:grid-cols-2">
         <section className="md:ml-24 lg:ml-32 lg:mt-2 md:max-lg:w-3/5">
           <div className={satoshiBold.className + " flex flex-col text-white text-center md:text-start px-5 md:px-0 md:items-start pt-20 md:pt-64 lg:pt-36 mb-3.5"}>
             <div>
@@ -31,7 +31,7 @@ export default function Membership() {
             </div>
           </div>
 
-          <p className={satoshiMedium.className + " pb-2 md:pb-6 align-bottom text-base md:text-2xl lg:text-3xl leading-normal mt-5 mb-96"}>
+          <p className={satoshiMedium.className + " pb-2 md:pb-6 align-bottom text-base md:text-2xl lg:text-3xl leading-normal mt-5"}>
               {'Any questions regarding payment can be sent to '} 
               <a href="mailto:cougaraicontact@gmail.com" className="">cougaraicontact@gmail.com</a>
           </p>
