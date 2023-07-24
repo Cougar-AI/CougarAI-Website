@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { satoshiBold, satoshiMedium } from '@/util/localFonts';
 
 // update this content/information with better branding.
