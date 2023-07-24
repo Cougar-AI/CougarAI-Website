@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import { satoshiBold } from '@/util/localFonts';
 
-interface infoCardProps{
+interface InfoCardProps{
     key: number;
     cardTitle: string;
 }
 
-const InfoCard = (props: infoCardProps) => {
+const InfoCard = (props: InfoCardProps) => {
 
     return(
         <div key={props.key} className="relative flex flex-row gap-x-4 bg-snow rounded-md h-12 md:h-16 items-center overflow-hidden text-center">

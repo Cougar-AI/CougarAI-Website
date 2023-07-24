@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-interface socialLinkProps{
+interface SocialLinkProps{
   platform: string;
   accountLink: string;
   platformIcon: string;
@@ -10,7 +10,7 @@ interface socialLinkProps{
   // iconHeight: number;
 }
 
-const SocialLink = (props: socialLinkProps) => {
+const SocialLink = (props: SocialLinkProps) => {
     return(
       <Link href={`${props.accountLink}`} className="z-50 pb-2" target="_blank">
         <Image src={`${props.platformIcon}`} width={40} height={40} className="z-50 hover:scale-105 hover:rotate-2 duration-700" alt={`${props.platform} icon`}></Image>

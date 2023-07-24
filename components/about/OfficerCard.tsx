@@ -1,14 +1,14 @@
 import Image from 'next/image'
 import SocialLink from '@/components/about/SocialLink'
 
-interface officerCardProps{
+interface OfficerCardProps{
     key: number;
     name: string;
     officerRole: string;
     officerLinkedIn: string;
 }
 
-const OfficerCard = (props: officerCardProps) => {
+const OfficerCard = (props: OfficerCardProps) => {
     let officerNameTextSize = "text-2xl";
 
     if(props.name.length > 20) //The Briana Breakpoint (TM)...

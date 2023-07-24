@@ -1,7 +1,4 @@
-// unsure if using a map is better in this case. Map<string, { role: string, name: string, linkedIn: string }>
-
-// list of officers will be used to populate the officer cards. Update information here at a later date. Format is as follows:
-// [role, name, linkedIn]
+// list of officers will be used to populate the officer cards. Update before each semester. (Or whenever an officer position changes)
 
 export const officers = new Map<string, { name: string, linkedIn: string }>([
     ['President', { name: 'Zeel Engineer', linkedIn: 'https://www.linkedin.com/in/zeel-engineer-536265216/' }],

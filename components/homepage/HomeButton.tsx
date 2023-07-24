@@ -1,10 +1,10 @@
 import Link from 'next/link'
-interface buttonProps {
+interface ButtonProps {
     text: string,
     link: string,
 }
 
-const HomeButton = (props: buttonProps) => {
+const HomeButton = (props: ButtonProps) => {
     return(
         <button className=" relative transition ease-in-out duration-500 delay-150 hover:scale-105 bg-white rounded-3xl w-20 h-[1.85rem] md:w-36 md:h-10 md:py-1.5 py-0.5 text-center z-50 overflow-hidden">
             <Link href={props.link} target="_blank">
