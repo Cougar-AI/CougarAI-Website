@@ -13,7 +13,7 @@ export default function Membership() {
                 <span className="">{'Gain'}</span>{' access to exclusive AI workshops, research projects, and rewards with a CougarAI membership.'}
               </p>
               <p className={satoshiMedium.className + " pb-2 md:pb-6 align-bottom text-base md:text-2xl lg:text-3xl leading-normal"}>
-                {'Our membership opens the door to having more opportunities to explore AI & Data Science in a hands-on environment.'}
+                {'Our membership opens the door for all majors to having more opportunities to explore AI & Data Science.'}
               </p>
             </div>
             <p className={satoshiMedium.className + " pb-2 md:pb-6 align-bottom text-base md:text-2xl lg:text-3xl leading-normal mb-2"}>
