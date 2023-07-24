@@ -1,11 +1,11 @@
 import Link from 'next/link'
 
-interface linkProps {
+interface LinkProps {
     text: string,
     link: string,
 }
 
-const NavLink = (props: linkProps) => {
+const NavLink = (props: LinkProps) => {
     return(
         <Link href={props.link}>
             <h1 className="group hover:scale-105 duration-700 ease-in-out">
