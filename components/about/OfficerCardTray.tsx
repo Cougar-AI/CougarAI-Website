@@ -4,8 +4,8 @@ import { officers } from '@/util/officerInformation/officers'
 const OfficerCardTray = () => {
     return(
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-y-5 md:gap-y-9 md:gap-x-9 z-10">
-         {officers.map(([officerRole, officerName, officerLinkedIn], index) => (
-            <OfficerCard key={index} name={officerName} officerRole={officerRole} officerLinkedIn={officerLinkedIn}></OfficerCard>
+         {Array.from(officers.entries()).map(([officerRole, officerDetails], index) => (
+            <OfficerCard key={index} name={officerDetails.name} officerRole={officerRole} officerLinkedIn={officerDetails.linkedIn}></OfficerCard>
          ))}
         </div>
     );
