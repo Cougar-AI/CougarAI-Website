@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import MembershipInfoSection from '@/components/membership/MembershipInfoSection';
+import PricingCard from '@/components/membership/PricingCard';
 import { satoshiMedium, satoshiBold } from '@/util/localFonts';
 
 export default function Membership() {
@@ -8,15 +9,9 @@ export default function Membership() {
         <section className="md:ml-24 lg:ml-32 lg:mt-2 md:max-lg:w-3/5">
           <div className={satoshiBold.className + " flex flex-col text-white text-center md:text-start px-5 md:px-0 md:items-start pt-20 md:pt-64 lg:pt-36 mb-3.5"}>
             <MembershipInfoSection/>
-            <div className="flex flex-col w-full gap-y-4">
-              <div className="flex flex-row gap-x-4 h-inherit w-full">
-                <div className="bg-snow rounded-md w-1/2 py-3 pl-3 lg:pl-6">
-                  <h1 className="grid grid-cols-2 lg:w-2/3 text-4xl lg:text-5xl text-cai-500">$10<span className="text-base lg:text-xl leading-none text-start">per semester</span></h1>
-                </div>
-                <div className="bg-misty-rose rounded-md w-1/2 overflow-hidden relative p-3 lg:pl-6">
-                  <h1 className="grid grid-cols-2 lg:w-2/3 text-4xl lg:text-5xl text-cai-500">$15<span className="text-base lg:text-xl leading-none text-start">per year</span></h1>
-                </div>
-              </div>
+            <div className="flex flex-row gap-x-4 h-inherit w-full">
+              <PricingCard priceTag={'$10'} subscriptionPlan={'/semester'}></PricingCard>
+              <PricingCard priceTag={'$15'} subscriptionPlan={'/year'}></PricingCard>
             </div>
           </div>
           <div className={satoshiBold.className + " flex flex-col text-white text-center md:text-start px-5 md:px-0 md:items-start"}>
