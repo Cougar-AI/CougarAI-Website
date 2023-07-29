@@ -1,4 +1,4 @@
-import HomeButton from '@/components/HomeButton'
+import HomeButton from '@/components/homepage/HomeButton'
 import { satoshiBold } from '@/util/localFonts';
 
 const trayOptions: string[][] = [
@@ -10,7 +10,7 @@ const trayOptions: string[][] = [
 const HomeButtonTray = () => {
     return(
         <div className = {satoshiBold.className}>
-          <div className="flex flex-row gap-x-8 md:max-2xl:gap-x-9 pt-3 md:max-2xl:pt-1 z-50">
+          <div className="flex flex-row gap-x-[1.4rem] md:gap-x-[1.7rem] lg:max-2xl:gap-x-[2.1rem] md:max-2xl:pt-1 z-50">
             {trayOptions.map(([optionText, optionLink], index) => (
                 <HomeButton key = {index} text = {optionText} link = {optionLink}></HomeButton>
             ))}

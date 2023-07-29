@@ -8,14 +8,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'neural-network': 'url("/images/neural-network.png")',
         'binary': 'url("/images/binary.svg")',
       },
       colors: {
         'cai-400': '#E45354',
         'cai-500': '#C8494A',
+        'misty-rose': '#FAE7E7',
         'snow': '#FFFAFA',
       },
       fontSize:{
