@@ -11,5 +11,6 @@ export const officers: string[][] = [
     ['Relations', 'Ashish Job', 'https://www.linkedin.com/in/ashish-job/'],
     ['Events', 'Jonathan Gaucin', 'https://www.linkedin.com/in/jonathangaucin/'],
     ['Technical Officer', 'Sagun Kayastha', 'https://www.linkedin.com/in/sagun-kayastha-19516683/'],
-    ['Webmaster', 'Baqir Salim', 'https://www.linkedin.com/in/baqir-salim-887094215/'],
+    ['Webmaster', 'TBD', 'https://www.linkedin.com'],
+    ['Webmaster', 'Tariq Achor Zyad', 'https://www.linkedin.com/in/tachorzy/'],
 ]
