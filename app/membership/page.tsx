@@ -14,7 +14,7 @@ export default function Membership() {
               <PricingCard priceTag={'$15'} subscriptionPlan={'/year'}></PricingCard>
             </div>
           </div>
-          <div className={satoshiBold.className + " flex flex-col text-white text-center md:text-start px-5 md:px-0 md:items-start"}>
+          <div className={"flex flex-col text-white text-center md:text-start px-5 md:px-0 md:items-start"}>
             <p className={satoshiMedium.className + " pb-2 md:pb-6 align-bottom text-base md:text-2xl lg:text-3xl leading-normal mt-2"}>
                 {'Any questions regarding payment can be sent to '} 
                 <a href="mailto:cougaraicontact@gmail.com" className="">cougaraicontact@gmail.com</a>
