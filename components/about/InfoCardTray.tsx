@@ -1,15 +1,14 @@
 import InfoCard from '@/components/about/InfoCard'
 
-interface infoCardTrayProps{
-    cardTitles: string[];
-}
+
+const aboutUsCardInformation: string[] = ["Workshops", "Info Sessions", "Social Events"]
 
 
-const InfoCardTray = (props: infoCardTrayProps) => {
+const InfoCardTray = () => {
 
     return(
         <div className="grid md:grid-cols-2 gap-x-5 gap-y-5 items-center md:max-2xl:items-start mx-8 md:mx-0">
-            {props.cardTitles.map((cardTitle, index) => (
+            {aboutUsCardInformation.map((cardTitle, index) => (
                 <InfoCard key={index} cardTitle={cardTitle}></InfoCard>
             ))}
       </div>
