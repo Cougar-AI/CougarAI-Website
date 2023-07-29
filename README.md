@@ -1,6 +1,6 @@
 # CougarAI Website
 
-Cougar AI is the first student organization centralized around Artificial Intelligence, Machine Learning, and Data Science at the University of Houston. Our goal is to build a community of passionate students, host industry events, and have fun in the field of AI. We seek to educate our members about the latest in AI and machine learning no matter their level or major.
+Cougar AI is the first student organization centralized around Artificial Intelligence, Machine Learning, and Data Science at the University of Houston. Our goal is to build a community of passionate students, host industry events, and have fun in the field of AI. We seek to educate our members about the latest advancements in AI and machine learning no matter their level or major.
 
 This repository is for the official CougarAI website.
 
