@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { satoshiMedium, satoshiBold } from '@/util/localFonts';
+import EmailLink from '@/components/EmailLink';
 
 export default function Contact() {
     return (
@@ -13,7 +14,7 @@ export default function Contact() {
               </p>
               <p className={satoshiMedium.className + " pb-2 md:pb-6 align-bottom text-base md:text-2xl lg:text-3xl leading-normal"}>
                 {'Feel free to contact us at '}
-                <a href="mailto:cougaraicontact@gmail.com" className="">cougaraicontact@gmail.com</a>
+                <EmailLink/>
               </p>
           </div>
         </section>
