@@ -1,5 +1,3 @@
-import { satoshiBold, satoshiMedium } from '@/util/localFonts';
-
 interface PricingCardProps{
     priceTag: string;
     subscriptionPlan: string;

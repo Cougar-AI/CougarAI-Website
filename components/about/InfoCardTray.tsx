@@ -1,8 +1,6 @@
 import InfoCard from '@/components/about/InfoCard'
 
-
 const aboutUsCardInformation: string[] = ["Workshops", "Info Sessions", "Social Events"]
-
 
 const InfoCardTray = () => {
 

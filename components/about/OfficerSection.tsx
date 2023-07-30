@@ -1,5 +1,5 @@
 import OfficerCardTray from '@/components/about/OfficerCardTray';
-import { satoshiBold, satoshiMedium } from '@/util/localFonts';
+import { satoshiBold } from '@/util/localFonts';
 
 const OfficerSecton = () => {
     return (

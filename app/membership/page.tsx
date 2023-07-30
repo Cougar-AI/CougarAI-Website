@@ -2,7 +2,7 @@ import Image from 'next/image'
 import MembershipInfoSection from '@/components/membership/MembershipInfoSection';
 import PricingCard from '@/components/membership/PricingCard';
 import MembershipContact from '@/components/membership/MembershipContact';
-import { satoshiMedium, satoshiBold } from '@/util/localFonts';
+import { satoshiBold } from '@/util/localFonts';
 
 export default function Membership() {
     return (

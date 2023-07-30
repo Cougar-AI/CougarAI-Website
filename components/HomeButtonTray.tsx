@@ -1,4 +1,4 @@
-import HomeButton from '@/components/HomeButton'
+import HomeButton from '@/components/homepage/HomeButton'
 import { satoshiBold } from '@/util/localFonts';
 
 const trayOptions: string[][] = [

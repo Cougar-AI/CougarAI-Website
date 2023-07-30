@@ -1,4 +1,4 @@
-import { satoshiBold, satoshiMedium } from '@/util/localFonts';
+import { satoshiMedium } from '@/util/localFonts';
 
 const MembershipInfoSection = () => {
     return (
