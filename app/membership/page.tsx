@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import MembershipInfoSection from '@/components/membership/MembershipInfoSection';
 import PricingCard from '@/components/membership/PricingCard';
+import MembershipContact from '@/components/membership/MembershipContact';
 import { satoshiMedium, satoshiBold } from '@/util/localFonts';
 
 export default function Membership() {
@@ -14,12 +15,7 @@ export default function Membership() {
               <PricingCard priceTag={'$15'} subscriptionPlan={'/year'}></PricingCard>
             </div>
           </div>
-          <div className={"flex flex-col text-white text-center md:text-start px-5 md:px-0 md:items-start"}>
-            <p className={satoshiMedium.className + " pb-2 md:pb-6 align-bottom text-base md:text-2xl lg:text-3xl leading-normal mt-2"}>
-                {'Any questions regarding payment can be sent to '} 
-                <a href="mailto:cougaraicontact@gmail.com" className="">cougaraicontact@gmail.com</a>
-            </p>
-          </div>
+          <MembershipContact/>
         </section>
         <Image src="/Icons/binary.svg" width="0" height="0" className="lg:absolute lg:right-0 select-none overflow-hidden object-contain lg:object-fill w-full h-[50%] mt-36 lg:w-1/2 lg:h-[47%] md:h-[70%] lg:pl-72 md:top-0 md:mt-[50rem] lg:mt-[30.5rem]" alt="Binary Pattern"></Image>
       </main>
