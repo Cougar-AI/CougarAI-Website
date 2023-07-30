@@ -2,7 +2,7 @@ import HomeButton from '@/components/homepage/HomeButton'
 import { satoshiBold } from '@/util/localFonts';
 
 const trayOptions: string[][] = [
-    ["Join us!", "/"], //this will later link to the membership page once it's made
+    ["Join us!", "/membership"], //this will later link to the membership page once it's made
     ["Socials", "/"], //this will later link to either a linktree or bento? Maybe even just the instagram. Depends on Marketing team.
     ["Discord", "https://discord.gg/5Jhw67yQDH"],
 ]
