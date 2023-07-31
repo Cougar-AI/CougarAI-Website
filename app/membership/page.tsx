@@ -6,7 +6,7 @@ import { satoshiBold } from '@/util/localFonts';
 
 export default function Membership() {
     return (
-      <main className="bg-cai-400 min-h-screen flex flex-col lg:grid lg:grid-cols-2 pb-12">
+      <main className="bg-cai-400 min-h-screen flex flex-col max-md:items-center max-md:justify-center lg:grid lg:grid-cols-2 pb-12 overflow-x-hidden">
         <section className="md:ml-24 lg:ml-32 lg:mt-2 md:max-lg:w-3/5">
           <div className={satoshiBold.className + " flex flex-col text-white text-center md:text-start px-5 md:px-0 md:items-start pt-20 md:pt-64 lg:pt-36 mb-3.5"}>
             <MembershipInfoSection/>
