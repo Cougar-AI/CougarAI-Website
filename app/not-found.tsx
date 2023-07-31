@@ -2,17 +2,22 @@
 // beta Next.js 13 documentation: https://nextjs.org/docs/app/api-reference/file-conventions/not-found
 
 "use client";
-
 import Logo from '@/components/homepage/Logo'
 import { satoshiBold, satoshiMedium } from '@/util/localFonts'
 
 export default function Custom404() {
     return (
-      <main className="bg-cai-400 min-h-screen flex flex-col">
-        <section className="md:ml-24 lg:ml-32 lg:mt-2 md:max-lg:w-3/5">
-        <div className={satoshiBold.className + " flex flex-col relative align-bottom bottom-3 md:bottom-4 justify-between pt-20 md:pt-64 lg:pt-36"}>
-          <h1 className={"text-cai-500  font-extrabold	text-9xl md:text-[10rem] lg:text-[14rem]"}>404</h1>
-        </div>
+      <main className="bg-cai-400 min-h-screen flex flex-col overflow-hidden">
+        <section className="md:ml-24 lg:ml-32 w-[40%] lg:mt-2 md:max-lg:w-3/5">
+          <div className={satoshiBold.className + " flex flex-col align-bottom bottom-3 md:bottom-4 pt-20 md:pt-64 lg:pt-36"}>
+            <h1 className={"text-white font-extrabold	text-2xl md:text-3xl lg:text-5xl leading-9"}>Sorry, but we couldn't find that page in our dataset.</h1>
+          </div>
+        </section>
+
+
+        <section className="md:ml-24 lg:ml-44 lg:mt-2 md:max-lg:w-3/5">
+            {/* unsure of the margins on the other breakpoints -- perhaps fix this later */}
+            <h1 className={"text-cai-500  font-extrabold	text-right text-9xl md:text-[10rem] lg:text-[25rem] absolute md:mt-16 lg:mt-32 right-0 overflow-hidden"}>404</h1>
         </section>
       </main>
     )
