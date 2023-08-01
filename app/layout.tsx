@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Cougar AI',
   description: 'AI & Machine Learning @ UH',
   openGraph: {
-    title: 'CougarAI',
+    title: 'Cougar AI',
     description: 'AI & Machine Learning @ UH',
     url: 'https://cougarai.org',
     siteName: 'Cougar AI',
