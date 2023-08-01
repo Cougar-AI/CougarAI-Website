@@ -10,7 +10,7 @@ export default function Custom404() {
       <main className="bg-cai-400 min-h-screen max-md:items-center flex flex-col overflow-hidden">
         <section className="md:ml-24 lg:ml-32 w-5/6 lg:mt-2 md:max-lg:w-3/5 lg:w-[40%]">
           <div className={satoshiBold.className + " flex flex-col align-bottom bottom-3 md:bottom-4 pt-20 md:pt-64 lg:pt-36"}>
-            <h1 className={"text-white font-extrabold	text-2xl md:text-3xl lg:text-5xl leading-9"}>Sorry, but we couldn't find that page in our dataset.</h1>
+            <h1 className={"text-white font-extrabold	text-2xl md:text-3xl lg:text-5xl leading-9"}>{"Sorry, but we couldn't find that page in our dataset."}</h1>
           </div>
         </section>
 
