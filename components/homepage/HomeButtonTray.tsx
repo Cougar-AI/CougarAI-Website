@@ -3,7 +3,7 @@ import { satoshiBold } from '@/util/localFonts';
 
 const trayOptions: string[][] = [
     ["Join us!", "/membership"], //this will later link to the membership page once it's made
-    ["Socials", "/We-Desperately-Need-A-LinkTree-Here-Thanks"], //this will later link to either a linktree or bento? Maybe even just the instagram. Depends on Marketing team.
+    ["Socials", "https://bento.me/cougarai"], //this will later link to either a linktree or bento? Maybe even just the instagram. Depends on Marketing team.
     ["Discord", "https://discord.gg/5Jhw67yQDH"],
 ]
 
