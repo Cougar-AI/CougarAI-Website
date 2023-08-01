@@ -18,7 +18,7 @@ export default function Home() {
         </div>
       </div>  
       <div>
-        <Image src="/icons/binary.svg" width="0" height="0" className="fixed lg:right-0 select-none overflow-hidden object-contain lg:object-fill w-full h-[50%] max-md:mt-16 max-md:pt-1.5 md:w-1/2 lg:h-[47%] md:h-[70%] lg:pl-72 lg:top-0 md:mt-[50rem] lg:mt-[30.5rem] z-0" alt="Binary pattern"></Image>
+        <Image src="/Icons/binary.svg" width="0" height="0" className="fixed lg:right-0 select-none overflow-hidden object-contain lg:object-fill w-full h-[50%] max-md:mt-16 max-md:pt-1.5 md:w-1/2 lg:h-[47%] md:h-[70%] lg:pl-72 lg:top-0 md:mt-[50rem] lg:mt-[30.5rem] z-0" alt="Binary pattern"></Image>
       </div>
     </main>
   )
