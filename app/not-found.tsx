@@ -2,8 +2,7 @@
 // beta Next.js 13 documentation: https://nextjs.org/docs/app/api-reference/file-conventions/not-found
 
 "use client";
-import Logo from '@/components/homepage/Logo'
-import { satoshiBold, satoshiMedium } from '@/util/localFonts'
+import { satoshiBold } from '@/util/localFonts'
 
 export default function Custom404() {
     return (
