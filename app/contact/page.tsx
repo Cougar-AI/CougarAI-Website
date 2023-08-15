@@ -4,7 +4,6 @@ import EmailLink from '@/components/EmailLink';
 
 export default function Contact() {
     return (
-      // Deal with this code on the next sprint, too much to include in this sprint.
       <main className="bg-cai-400 h-screen flex flex-col lg:grid lg:grid-cols-2">
         <section className="md:ml-24 lg:ml-32 lg:mt-2 md:max-lg:w-3/5">
           <div className={satoshiBold.className + " flex flex-col text-white text-center md:text-start px-5 md:px-0 md:items-start pt-20 md:pt-64 lg:pt-36 mb-3.5"}>
