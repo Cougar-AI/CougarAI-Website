@@ -10,7 +10,7 @@ export default function Home() {
         <Logo/>
         <div className={satoshiBold.className + " flex flex-col relative z-40 align-bottom bottom-3 md:bottom-4 justify-between"}>
           <div className="text-white lg:mt-0 md:pb-6 align-bottom">
-            <h1 className="text-[3.76rem] tracking-wider md:text-7xl">CougarAI</h1>
+            <h1 className="text-[3.76rem] tracking-wide md:text-7xl">Cougar AI</h1>
             <h2 className="text-2xl md:text-4xl md:pt-2.5 max-md:pb-5">Your network for AI @ UH</h2>
           </div>
           

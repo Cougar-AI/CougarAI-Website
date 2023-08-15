@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { satoshiBold } from '@/util/localFonts';
 
-
 const Logo = () => {
     return (
         <div className={satoshiBold.className + " mt-28 md:mt-56 lg:mt-48 pr-3 z-40"}>

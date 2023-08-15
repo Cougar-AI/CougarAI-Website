@@ -7,9 +7,16 @@ interface ButtonProps {
 const HomeButton = (props: ButtonProps) => {
     return(
         <button className=" relative transition ease-in-out duration-500 delay-150 hover:scale-105 bg-white rounded-3xl w-20 h-[1.85rem] md:w-36 md:h-10 md:py-1.5 py-0.5 text-center z-50 overflow-hidden">
-            <Link href={props.link} target="_blank">
-                <h1 className="text-sm md:text-lg font-bold hover:text-cai-500 text-cai-400">{props.text}</h1>
-            </Link>
+            {/*next/link comes with client-side navigation between pages, so for internal links we'll use a Link component, external links will use an anchor tag.*/}
+            { props.link[0] === "/" ? 
+                <a href={props.link}>
+                    <h1 className="text-sm md:text-lg font-bold hover:text-cai-500 text-cai-400">{props.text}</h1>
+                </a>
+                : 
+                <Link href={props.link} target="_blank">
+                    <h1 className="text-sm md:text-lg font-bold hover:text-cai-500 text-cai-400">{props.text}</h1>
+                </Link>
+            }
         </button>
     )
 }

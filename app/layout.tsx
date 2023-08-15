@@ -4,13 +4,13 @@ import { satoshi } from '@/util/localFonts';
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'CougarAI',
+  title: 'Cougar AI',
   description: 'AI & Machine Learning @ UH',
   openGraph: {
-    title: 'CougarAI',
+    title: 'Cougar AI',
     description: 'AI & Machine Learning @ UH',
     url: 'https://cougarai.org',
-    siteName: 'CougarAI',
+    siteName: 'Cougar AI',
     locale: 'en-US',
     type: 'website',
   },
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={satoshi.className}>
+      <body className={satoshi.className + ` bg-cai-400`}>
         <div className="z-50">
           <NavBar/>
         </div>
