@@ -24,10 +24,10 @@ const OfficerCard = (props: OfficerCardProps) => {
             <div className="flex flex-col items-center md:pb-2 z-40 h-1/2">
                 <h1 className={`text-cai-500 ${officerNameTextSize} text-center drop-shadow-sm md:pt-1.5 -pt-1.5"`}>{props.name}</h1>
                 <h2 className="text-cai-500 text-xl text-center drop-shadow-sm md:pb-2 pb-1.5">{props.officerRole}</h2>
-                <SocialLink platform="LinkedIn" accountLink={props.officerLinkedIn} platformIcon='/Icons/LinkedIn_icon.svg'></SocialLink>
+                <SocialLink platform="LinkedIn" accountLink={props.officerLinkedIn} platformIcon='/Icons/linkedinIcon.svg'></SocialLink>
             </div>
             {/* Card Pattern */}
-            <Image src="/icons/neural-network-pattern.png" width={350} height={"0"} className="absolute h-[115%] scale-[160%] md:scale-[195%] rounded-tr-3xl top-0 ml-28 md:mt-20 mt-[4.5rem] object-none z-0 select-none" alt="Officer Card Pattern"></Image>
+            <Image src="/icons/neuralNetwork.png" width={350} height={"0"} className="absolute h-[115%] scale-[160%] md:scale-[195%] rounded-tr-3xl top-0 ml-28 md:mt-20 mt-[4.5rem] object-none z-0 select-none" alt="Officer Card Pattern"></Image>
         </div>
     )
 }
