@@ -22,7 +22,7 @@ const OfficerCard = (props: OfficerCardProps) => {
             {/* Officer bio, name, title, and LinkedIn link */}
             <div className="flex flex-col items-center md:pb-2 z-40 h-1/2">
                 <h1 className={`text-cai-500 ${officerNameTextSize} text-center drop-shadow-sm md:pt-1.5 -pt-1.5"`}>{props.name}</h1>
-                <h2 className={`text-cai-500 text=xl text-center drop-shadow-sm md:pb-2 pb-1.5`}>{props.officerRole}</h2>
+                <h2 className={`text-cai-500 text-xl text-center drop-shadow-sm md:pb-2 pb-1.5`}>{props.officerRole}</h2>
                 <SocialLink platform="LinkedIn" accountLink={props.officerLinkedIn} platformIcon='/icons/linkedinIcon.svg'></SocialLink>
             </div>
             {/* Card Pattern */}
