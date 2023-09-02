@@ -10,11 +10,14 @@ interface OfficerCardProps{
 
 const OfficerCard = (props: OfficerCardProps) => {
     let officerNameTextSize = "text-2xl";
-
+    let officerRoleTextSize = "text-xl";
     if(props.name.length > 20) //The Briana Breakpoint (TM)...
         officerNameTextSize = "text-[1.35rem] leading-none pb-0.5";
     else if(props.name.length > 14)
         officerNameTextSize += " max-lg:text-[1.35rem]";
+
+    if(props.officerRole.length > 20)
+        officerRoleTextSize = "text-[1.25rem] leading-none pb-0.5";
 
     return(
         <div className="flex flex-col relative gap-y-0 bg-snow rounded-md h-[17rem] w-52 md:h-[19rem] md:w-64 items-center md:p-8 p-1.5 overflow-hidden">
@@ -23,7 +26,7 @@ const OfficerCard = (props: OfficerCardProps) => {
             {/* Officer bio, name, title, and LinkedIn link */}
             <div className="flex flex-col items-center md:pb-2 z-40 h-1/2">
                 <h1 className={`text-cai-500 ${officerNameTextSize} text-center drop-shadow-sm md:pt-1.5 -pt-1.5"`}>{props.name}</h1>
-                <h2 className="text-cai-500 text-xl text-center drop-shadow-sm md:pb-2 pb-1.5">{props.officerRole}</h2>
+                <h2 className={`text-cai-500 ${officerRoleTextSize} text-center drop-shadow-sm md:pb-2 pb-1.5`}>{props.officerRole}</h2>
                 <SocialLink platform="LinkedIn" accountLink={props.officerLinkedIn} platformIcon='/icons/linkedinIcon.svg'></SocialLink>
             </div>
             {/* Card Pattern */}
