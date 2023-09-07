@@ -6,6 +6,7 @@ interface OfficerCardProps{
     name: string;
     officerRole: string;
     officerLinkedIn: string;
+    hasHeadshot: boolean;
 }
 
 const OfficerCard = (props: OfficerCardProps) => {
@@ -18,7 +19,7 @@ const OfficerCard = (props: OfficerCardProps) => {
     return(
         <div className="flex flex-col relative gap-y-0 bg-snow rounded-md h-[17rem] w-52 md:h-[19rem] md:w-64 items-center md:p-8 p-1.5 overflow-hidden">
             {/* Will code this for various headshots in the next sprint, when I have headshot photos available */}
-            <Image src={`/officerHeadshots/${props.name}.png`} width={130} height={130} className="rounded-full z-40 border-misty-rose border-8 scale-[80%] md:scale-100 h/2" alt={`Officer headshot: ${props.name}`}></Image>
+            <Image src={props.hasHeadshot ? `/officerHeadshots/${props.name}.png` : `/officerHeadshots/placeholder.png`} width={130} height={130} className="rounded-full z-40 border-misty-rose border-[9.5px] scale-[80%] md:scale-100 h/2" alt={`Officer headshot: ${props.name}`}></Image>
             {/* Officer bio, name, title, and LinkedIn link */}
             <div className="flex flex-col items-center md:pb-2 z-40 h-1/2">
                 <h1 className={`text-cai-500 ${officerNameTextSize} text-center drop-shadow-sm md:pt-1.5 -pt-1.5"`}>{props.name}</h1>
