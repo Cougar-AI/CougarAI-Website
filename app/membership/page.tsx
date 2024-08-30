@@ -11,8 +11,8 @@ export default function Membership() {
           <div className={satoshiBold.className + " flex flex-col text-white text-center md:text-start px-5 md:px-0 md:items-start pt-20 md:pt-64 lg:pt-36 mb-3.5"}>
             <MembershipInfoSection/>
             <div className="flex flex-col md:flex-row gap-4 h-inherit w-full">
-              <PricingCard priceTag={'$10'} subscriptionPlan={'/sem.'}></PricingCard>
-              <PricingCard priceTag={'$15'} subscriptionPlan={'/year'}></PricingCard>
+              <PricingCard priceTag={'$15'} subscriptionPlan={'/sem.'}></PricingCard>
+              <PricingCard priceTag={'$25'} subscriptionPlan={'/year'}></PricingCard>
             </div>
           </div>
           <MembershipContact/>
