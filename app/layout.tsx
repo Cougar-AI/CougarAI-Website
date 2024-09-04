@@ -4,10 +4,10 @@ import { satoshi } from '@/util/localFonts';
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cougar AI',
+  title: 'CougarAI',
   description: 'AI & Machine Learning @ UH',
   openGraph: {
-    title: 'Cougar AI',
+    title: 'CougarAI',
     description: 'AI & Machine Learning @ UH',
     url: 'https://cougarai.org',
     siteName: 'Cougar AI',
