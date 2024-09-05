@@ -9,7 +9,8 @@ export const officers = new Map<string, { name: string, role: string, linkedIn: 
     ['Marketing', { name: 'Sanam Davariar', role: 'Marketing', linkedIn: 'https://www.linkedin.com/in/sanamdavariar/', hasHeadshot: true }],
     ['Events', { name: 'Jose Conde', role: 'Events', linkedIn: 'https://www.linkedin.com/in/jose-conde-ab78002aa/', hasHeadshot: true }],
     ['Project_Director', { name: 'Harvey Pham', role: 'Project Director', linkedIn: 'https://www.linkedin.com/in/harveyphm/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', hasHeadshot: true }],
-    ['Technical_Officer', { name: 'Alexander Sangurima', role: 'Technical Officer', linkedIn: 'https://www.linkedin.com/in/asangurima/', hasHeadshot: false}],
+    ['Technical_Officer', { name: 'Andrew Bradley', role: 'Technical Officer', linkedIn: 'https://www.linkedin.com/in/ahbradl2/', hasHeadshot: true}],
+    ['Technical_Officer_2', { name: 'Alexander Sangurima', role: 'Technical Officer', linkedIn: 'https://www.linkedin.com/in/asangurima/', hasHeadshot: false}],
     ['Historian', { name: 'Gyan Andrei Gabilan', role: 'Historian', linkedIn: 'https://www.linkedin.com/in/gyanandreigabilan/', hasHeadshot: true }],
     ['Webmaster', { name: 'Gurpreet Singh', role: 'Webmaster', linkedIn: 'https://www.linkedin.com/in/gurpreet-singh0/', hasHeadshot: true}],
 ])
