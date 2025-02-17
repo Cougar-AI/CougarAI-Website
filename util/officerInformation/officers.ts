@@ -13,6 +13,7 @@ export const officers = new Map<string, { name: string, role: string, linkedIn: 
     ['Technical_Officer_2', { name: 'TBD', role: 'Technical Officer', linkedIn: 'https://www.linkedin.com/', hasHeadshot: false}],
     ['Historian', { name: 'TBD', role: 'Historian', linkedIn: 'https://www.linkedin.com/', hasHeadshot: false }],
     ['Webmaster', { name: 'Jason Quach', role: 'Webmaster', linkedIn: 'https://www.linkedin.com/in/jason-quach-478a6225b/', hasHeadshot: true}],
+    ['Webmaster Commettee', { name: 'Miguel Rodriguez', role: 'Webmaster Committee', linkedIn: 'https://www.linkedin.com/in/miguel-rodriguez302002/', hasHeadshot: true}],
     ['Workshop Committee', { name: 'Isaac', role: "Workshop Committee", linkedIn: 'https://www.linkedin.com/', hasHeadshot: false}],
     ['Workshop Committee 2', { name: 'Asibong Sylvia Ephraim', role: "Workshop Committee", linkedIn: 'https://www.linkedin.com/in/asibong-ephraim-9685b6330/', hasHeadshot: true}],
     ['Marketing Committee', { name: 'Khyaati Khanna', role: "Marketing Committee", linkedIn: 'http://www.linkedin.com/in/khyaati-khanna/', hasHeadshot: true}],
