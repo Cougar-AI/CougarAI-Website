@@ -17,7 +17,7 @@ const OfficerCard = (props: OfficerCardProps) => {
         officerNameTextSize += " max-lg:text-[1.35rem]";
 
         return(
-            <div className="flex flex-col relative gap-y-0 bg-snow rounded-md h-[17rem] w-52 md:h-[19rem] md:w-64 items-center md:p-8 p-1.5 overflow-hidden">
+            <div className="flex flex-col relative gap-y-0 bg-snow rounded-md h-[19rem] w-52 md:h-[21rem] md:w-64 items-center md:p-8 p-1.5 overflow-hidden">
                 {/* Will code this for various headshots in the next sprint, when I have headshot photos available */}
                 <Image src={props.hasHeadshot ? `/officerHeadshots/${props.name}.png?v=1.0` : `/officerHeadshots/placeholder.png`} width={130} height={130} className="rounded-full z-40 border-misty-rose border-[9.5px] h-[100px] w-[100px] md:h-[120px] md:w-[120px] object-cover scale-[80%] md:scale-100" alt={`Officer headshot: ${props.name}`}></Image>
                 {/* Officer bio, name, title, and LinkedIn link */}
