@@ -15,8 +15,8 @@ export const officers = new Map<string, { name: string, role: string, linkedIn: 
     ['Marketing Committee', { name: 'Khyaati Khanna', role: "Marketing Committee", linkedIn: 'http://www.linkedin.com/in/khyaati-khanna/', hasHeadshot: true}],
     ['Projects Officer', { name: 'Fredy Orellana', role: "Projects Officer", linkedIn: 'https://www.linkedin.com/in/feorella/', hasHeadshot: true}],
     ['Technical_Officer', { name: 'Dylan Berens', role: 'Technical Officer', linkedIn: 'https://www.linkedin.com/in/dylanberens', hasHeadshot: true}],
-    ['Technical_Officer 2', { name: 'Sahran Ashoor', role: 'Technical Officer', linkedIn: 'https://linkedin.com/in/ashoorsahran/', hasHeadshot: true}],
-    ['Events', { name: 'TBD', role: 'Events', linkedIn: 'https://www.linkedin.com/', hasHeadshot: false }],
+    ['Technical_Officer 2', { name: 'Sahran Ashoor', role: 'Technical Officer', linkedIn: 'https://linkedin.com/in/ashoorsahran/', hasHeadshot: false}],
+    ['Events', { name: 'Zainab Sohail', role: 'Events', linkedIn: 'https://www.linkedin.com/in/zainab11', hasHeadshot: true }],
     ['Project_Director', { name: 'TBA', role: 'Project Director', linkedIn: 'https://www.linkedin.com/', hasHeadshot: false }],
     ['Historian', { name: 'TBD', role: 'Historian', linkedIn: 'https://www.linkedin.com/', hasHeadshot: false }],
 ])
