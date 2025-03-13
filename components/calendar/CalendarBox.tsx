@@ -151,7 +151,7 @@ const GoogleCalendar = () => {
             {showModal.location && <p className="text-gray-600 mb-1">📍 {showModal.location}</p>}
             <p className="text-gray-600 mb-1">🕒 Start: {formatDate(showModal.start.dateTime || showModal.start.date)}</p>
             <p className="text-gray-600 mb-1">⏳ End: {formatDate(showModal.end?.dateTime || showModal.end?.date)}</p>
-            <p className="text-gray-600 mb-3">💬 Description: {showModal.description || "No Description"}</p>
+            {showModal.description&& <p className="text-gray-600 mb-3">💬 Description: {showModal.description || "No Description"}</p>}
             <button onClick={() => setShowModal(null)} className="w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded-lg transition">
               Close
             </button>
