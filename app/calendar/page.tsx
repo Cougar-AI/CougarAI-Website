@@ -11,15 +11,6 @@ export default function Calendar() {
       <CalendarBox/>
     </div>
   </section>
-  <div className="hidden xl:block absolute bottom-0 right-0 z-0 mb-4 mr-4">
-        <Image
-          src="/icons/binary.svg"
-          alt="Binary Pattern"
-          width={0}
-          height={0}
-          className="w-[360px] h-auto select-none"
-        />
-      </div>
 </main>
 
 )
