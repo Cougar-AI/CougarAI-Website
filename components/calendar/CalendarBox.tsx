@@ -71,7 +71,7 @@ const GoogleCalendar = () => {
 }
 
   useEffect(() => {
-    fetchEvents();
+    fetchEvents(true);
   }, []);
 
   const changeMonth = (increment: number) => {
