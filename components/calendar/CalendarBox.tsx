@@ -31,11 +31,11 @@ const GoogleCalendar = () => {
     });
   };
 
-  const fetchEvents = async (forchedRefresh = false) => {
+  const fetchEvents = async (forcedRefresh = false) => {
     try {
       setLoading(true);
 
-      if (forchedRefresh) {
+      if (forcedRefresh) {
         localStorage.removeItem("cachedEvents");
         localStorage.removeItem("cacheTimestamp")
       }
@@ -43,20 +43,22 @@ const GoogleCalendar = () => {
       const cachedEvents = localStorage.getItem("cachedEvents");
       const cacheTimestamp = localStorage.getItem("cacheTimestamp");
 
-      if (cachedEvents && cacheTimestamp) {
+      if (!forcedRefresh && cachedEvents && cacheTimestamp) {
         const now = new Date().getTime();
         const oneDay = 24 * 60 * 60 * 1000; 
         if (now - parseInt(cacheTimestamp) < oneDay) {
+          console.log("Loading from cache...");
           setEvents(JSON.parse(cachedEvents));
           setLoading(false);
           return;
       }
     }
   
+      console.log("Fetching fresh data...");
       const res = await fetch("/api/google-calendar");
       const data = await res.json();
       if (Array.isArray(data) && data.length > 0) {
-        setEvents(data);
+        setEvents([...data]);
         localStorage.setItem("cachedEvents", JSON.stringify(data));
         localStorage.setItem("cacheTimestamp", new Date().getTime().toString());
       }
