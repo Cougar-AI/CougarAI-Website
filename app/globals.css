@@ -116,3 +116,7 @@ a {
     color-scheme: dark;
   }
 }
+
+.red-filter{
+  filter: invert(64%) sepia(24%) saturate(3972%) hue-rotate(334deg) brightness(103%) contrast(101%);
+}
