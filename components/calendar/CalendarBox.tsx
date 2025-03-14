@@ -127,13 +127,34 @@ const GoogleCalendar = () => {
         <div className="text-center text-lg font-bold text-gray-500">Loading events...</div>
         ) : (
         <div className="grid grid-cols-7 gap-1 text-center font-bold border border-white text-cai-400 w-full min-h-[60vh] md:min-h-[80vh]">
-            <div className="border p-2">Sun</div>
-            <div className="border p-2">Mon</div>
-            <div className="border p-2">Tue</div>
-            <div className="border p-2">Wed</div>
-            <div className="border p-2">Thu</div>
-            <div className="border p-2">Fri</div>
-            <div className="border p-2">Sat</div>
+          <div className="border p-2">
+            <span className="block md:hidden">S</span>  
+            <span className="hidden md:block">Sun</span> 
+          </div>
+          <div className="border p-2">
+            <span className="block md:hidden">M</span>
+            <span className="hidden md:block">Mon</span>
+          </div>
+          <div className="border p-2">
+            <span className="block md:hidden">T</span>
+            <span className="hidden md:block">Tue</span>
+          </div>
+          <div className="border p-2">
+            <span className="block md:hidden">W</span>
+            <span className="hidden md:block">Wed</span>
+          </div>
+          <div className="border p-2">
+            <span className="block md:hidden">T</span>
+            <span className="hidden md:block">Thu</span>
+          </div>
+          <div className="border p-2">
+            <span className="block md:hidden">F</span>
+            <span className="hidden md:block">Fri</span>
+          </div>
+          <div className="border p-2">
+            <span className="block md:hidden">S</span>
+            <span className="hidden md:block">Sat</span>
+          </div>
             {renderCalendarDays()}
         </div>
         )}
@@ -151,7 +172,7 @@ const GoogleCalendar = () => {
             {showModal.location && <p className="text-gray-600 mb-1">📍 {showModal.location}</p>}
             <p className="text-gray-600 mb-1">🕒 Start: {formatDate(showModal.start.dateTime || showModal.start.date)}</p>
             <p className="text-gray-600 mb-1">⏳ End: {formatDate(showModal.end?.dateTime || showModal.end?.date)}</p>
-            <p className="text-gray-600 mb-3">💬 Description: {showModal.description || "No Description"}</p>
+            {showModal.description&& <p className="text-gray-600 mb-3">💬 Description: {showModal.description || "No Description"}</p>}
             <button onClick={() => setShowModal(null)} className="w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded-lg transition">
               Close
             </button>
