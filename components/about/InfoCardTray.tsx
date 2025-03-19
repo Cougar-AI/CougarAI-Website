@@ -4,7 +4,7 @@ const aboutUsCardInformation: { title: string; link?: string }[] = [
     { title: "Workshops" },
     { title: "Info Sessions" },
     { title: "Social Events" },
-    { title: "Projects", link: "https://photos.google.com/share/AF1QipNWQ-vbx201JGgNFwTwwkCijNsgr9iswVVFYHrdvEYhQvKaJo24SvyyTaQV_rOaMg?pli=1&key=T29mWUJsVVpIZG1YajdDVmFfY3FtNEFIc050UF93" } // Google Drive link
+    { title: "Projects", link: "https://github.com/Cougar-AI" } // Google Drive link
 ]
 
 const InfoCardTray = () => {
