@@ -46,8 +46,8 @@ const GoogleCalendar = () => {
 
       if (!forcedRefresh && cachedEvents && cacheTimestamp) {
         const now = new Date().getTime();
-        const oneDay = 24 * 60 * 60 * 1000;
-        if (now - parseInt(cacheTimestamp) < oneDay) {
+        const oneHour = 60 * 60 * 1000;
+        if (now - parseInt(cacheTimestamp) < oneHour) {
           console.log("Loading from cache...");
           setEvents(JSON.parse(cachedEvents));
           setLoading(false);
