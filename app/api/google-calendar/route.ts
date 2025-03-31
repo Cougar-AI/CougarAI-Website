@@ -16,7 +16,7 @@ export async function GET() {
     const response = await calendar.events.list({
       calendarId: "cougaraicontact@gmail.com",
       timeMin: "2022-08-08T00:00:00Z",
-      maxResults: 200,
+      maxResults: 500,
       singleEvents: true,
       orderBy: "startTime",
     });

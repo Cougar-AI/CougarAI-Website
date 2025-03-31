@@ -155,7 +155,12 @@ const GoogleCalendar = () => {
         <Image src="/icons/CAI_Revised.svg" alt="CAI Logo" width={150} height={150} className= "red-filter" />
       </div>
       <div className = "flex justify-center items-center mb-4 space-x-2">
-        <button className="bg-cai-400 text-white rounded-lg px-6 py-2" onClick={async () => await fetchEvents(true)}>Refresh</button>
+        <button className="bg-cai-400 text-white rounded-lg px-6 py-2" onClick={async () => {
+      localStorage.removeItem("cachedEvents");
+      localStorage.removeItem("cacheTimestamp");
+      await fetchEvents(true);
+    }}>Refresh
+        </button>
         <button className="bg-cai-400 text-white rounded-lg px-6 py-2" onClick={() => setCurrentDate(new Date())}>Today</button>
       </div>
 
